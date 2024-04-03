@@ -2,6 +2,55 @@
 <html class="no-js" lang="en">
 
 <head>
+    <style>
+  /* Project container */
+  .project {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap */
+      margin-bottom: 2em; /* Space between project entries */
+  }
+
+  /* Image container within each project */
+  .project-image {
+      flex: 1 1 auto; /* Allow the image container to grow and shrink with flexbox, but not beyond its actual content size */
+      max-width: 200px; /* Maximum width for image container */
+      height: auto; /* Auto-height to maintain aspect ratio */
+      margin-right: 20px; /* Space between image and text */
+  }
+
+  /* Images within the image container */
+  .project-image img {
+      width: 100%; /* Make the image fill its container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: contain; /* Ensure the image is scaled properly to fit within its container */
+      border: 0; /* Remove any default borders */
+  }
+
+  /* Project information container */
+  .project-info {
+      flex: 3 1 60%; /* Allow the text container to grow and take up more space */
+      min-width: 0; /* Fixes flexbox overflow issue on some browsers */
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+      .project {
+          flex-direction: column; /* Stack the elements on small screens */
+          align-items: center; /* Center-align the stacked elements */
+      }
+
+      .project-image {
+          max-width: 100%; /* Allow image to fill the width on small screens */
+          margin-right: 0; /* Reset horizontal margin */
+          margin-bottom: 1em; /* Add margin below the image */
+      }
+
+      .project-info {
+          text-align: center; /* Center-align the text */
+      }
+  }
+</style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,47 +61,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <style>
-  /* Project container */
-  .project {
-      display: flex; /* Arrange the project image and info side by side */
-      flex-direction: row; /* Default to row, but this can be overridden in a media query for responsive design */
-      align-items: center; /* Center items vertically */
-      overflow: hidden; /* Prevents overflow of child elements */
-  }
-
-  /* Image container within each project */
-  .project-image {
-      flex-shrink: 0; /* Prevent the image container from shrinking */
-      margin-right: 20px; /* Space between the image and the text */
-      width: auto; /* Width should be auto to avoid stretching */
-      max-width: 100%; /* Contain the image within the bounds of its container */
-  }
-
-  /* Images within the image container */
-  .project-image img {
-      max-width: 100%; /* Ensure the image does not exceed the width of its container */
-      height: auto; /* Keep the image's aspect ratio */
-      object-fit: cover; /* Cover the area of the container. Use 'contain' for no cropping */
-  }
-
-  /* Responsive design adjustments */
-  @media (max-width: 768px) {
-      .project {
-          flex-direction: column; /* Stack the image and text on smaller screens */
-          text-align: center; /* Center the text for a cleaner look on small screens */
-      }
-
-      .project-image {
-          margin-right: 0; /* Remove the right margin as it's no longer needed */
-          margin-bottom: 15px; /* Add some space below the image */
-      }
-
-      .project-image img {
-          width: 100%; /* On smaller screens, the image should take up the full container width */
-      }
-  }
-</style>
+    
 
 </head>
 
