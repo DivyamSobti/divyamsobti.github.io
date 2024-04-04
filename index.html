@@ -3,57 +3,77 @@
 
 <head>
     <style>
-  /* Project container */
-  .project {
-      width: 100%; /* Use 100% of the column width */
-    margin: 0 auto; /* Center the card in the column */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional: Adds shadow for depth */
-    transition: 0.3s;
-      display: flex;
-      flex-wrap: wrap; /* Allow items to wrap */
-      margin-bottom: 2em; /* Space between project entries */
-  }
-
-  /* Image container within each project */
-  .project-image {
-      flex: 1 1 auto; /* Allow the image container to grow and shrink with flexbox, but not beyond its actual content size */
-      max-width: 200px; /* Maximum width for image container */
-      height: auto; /* Auto-height to maintain aspect ratio */
-      margin-right: 20px; /* Space between image and text */
-  }
-
-  /* Images within the image container */
-  .project-image img {
-      width: 100%; /* Make the image fill its container */
-      height: auto; /* Maintain aspect ratio */
-      object-fit: contain; /* Ensure the image is scaled properly to fit within its container */
-      border: 0; /* Remove any default borders */
-  }
-
-  /* Project information container */
-  .project-info {
-      flex: 3 1 60%; /* Allow the text container to grow and take up more space */
-      min-width: 0; /* Fixes flexbox overflow issue on some browsers */
-  }
-
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 768px) {
-      .project {
-          flex-direction: column; /* Stack the elements on small screens */
-          align-items: center; /* Center-align the stacked elements */
-      }
-
-      .project-image {
-          max-width: 100%; /* Allow image to fill the width on small screens */
-          margin-right: 0; /* Reset horizontal margin */
-          margin-bottom: 1em; /* Add margin below the image */
-      }
-
-      .project-info {
-          text-align: center; /* Center-align the text */
-      }
-  }
-</style>
+        /* Project container */
+        
+        .project {
+            width: 100%;
+            /* Use 100% of the column width */
+            margin: 0 auto;
+            /* Center the card in the column */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* Optional: Adds shadow for depth */
+            transition: 0.3s;
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+            margin-bottom: 2em;
+            /* Space between project entries */
+        }
+        /* Image container within each project */
+        
+        .project-image {
+            flex: 1 1 auto;
+            /* Allow the image container to grow and shrink with flexbox, but not beyond its actual content size */
+            max-width: 200px;
+            /* Maximum width for image container */
+            height: auto;
+            /* Auto-height to maintain aspect ratio */
+            margin-right: 20px;
+            /* Space between image and text */
+        }
+        /* Images within the image container */
+        
+        .project-image img {
+            width: 100%;
+            /* Make the image fill its container */
+            height: auto;
+            /* Maintain aspect ratio */
+            object-fit: contain;
+            /* Ensure the image is scaled properly to fit within its container */
+            border: 0;
+            /* Remove any default borders */
+        }
+        /* Project information container */
+        
+        .project-info {
+            flex: 3 1 60%;
+            /* Allow the text container to grow and take up more space */
+            min-width: 0;
+            /* Fixes flexbox overflow issue on some browsers */
+        }
+        /* Responsive adjustments for smaller screens */
+        
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+                /* Stack the elements on small screens */
+                align-items: center;
+                /* Center-align the stacked elements */
+            }
+            .project-image {
+                max-width: 100%;
+                /* Allow image to fill the width on small screens */
+                margin-right: 0;
+                /* Reset horizontal margin */
+                margin-bottom: 1em;
+                /* Add margin below the image */
+            }
+            .project-info {
+                text-align: center;
+                /* Center-align the text */
+            }
+        }
+    </style>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,7 +85,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    
+
 
 </head>
 
@@ -99,7 +119,7 @@
             </li>
         </ul>
     </header>
-<!--     <---End header -->
+    <!--     <---End header -->
 
     <div id="lead">
         <div id="lead-content">
@@ -118,13 +138,13 @@
                     </script>
                 </p>
             </h2>
-<!--             <a href="#" class="btn-rounded-white">Download Resume</a> -->
+            <!--             <a href="#" class="btn-rounded-white">Download Resume</a> -->
         </div>
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
 
-<!--         <div id="lead-down">
+        <!--         <div id="lead-down">
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
@@ -134,22 +154,28 @@
     <!-- End #lead -->
 
     <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="heading">About Me</h2>
+        <div class="container">
+            <div class="row">
                 <!-- Profile Image -->
-                <img src="path_to_your_profile_picture.jpg" alt="Divyam Sobti" class="profile-picture">
-            </div>
-            <div class="col-md-8">
-                <p>
-                    I am a master's student in artificial intelligence at San Jose State University specializing in data science. Currently working as a Research Assistant at SJSU. I am very keen on learning new technologies, and currently, I am looking for a Full-time opportunity in Data Science, Machine Learning & Software Engineering.
-                </p>
+                <div class="project-image">
+                    <!-- Replace with your project image -->
+                    <img src="images/state.jpg" alt="Divyam Sobti" class="profile-picture">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+
+
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I am a master's student in artificial intelligence at San Jose State University specializing in data science. Currently working as a Research Assistant at SJSU. I am very keen on learning new technologies, and currently, I am looking for a Full-time opportunity
+                        in Data Science, Machine Learning & Software Engineering.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End #about -->
+    <!-- End #about -->
 
     <!-- End #about -->
 
@@ -159,19 +185,22 @@
             <div data-date="Nov 2022 – Present">
                 <h3>San Jose State University, CA</h3>
                 <h4>Research Assistant, College of Engineering</h4>
-                <p>
-                    Focused on advection-diffusion field reconstruction tasks, showcasing robust machine learning and algorithm development abilities. Pioneered a deep reinforcement learning-based path planning algorithm for multi-agent systems. Conducted advanced sentiment
-                    analysis on customer reviews using cutting-edge NLP techniques. Enhanced sentiment analysis accuracy by 20%. Demonstrated expertise in data analysis and NLP applications, with a focus on leveraging GMM and other advanced methods.
-                </p>
+                <ul>
+                    <li>Focused on advection-diffusion field reconstruction tasks, showcasing robust machine learning and algorithm development abilities using Reinforced Learning.</li>
+                    <li>Pioneered a deep reinforcement learning-based path planning algorithm for multi-agent systems using PyTorch and CUDA.</li>
+                    <li>Conducted advanced sentiment analysis on customer reviews using cutting-edge NLP techniques. Enhanced sentiment analysis accuracy by 20%.</li>
+                    <li>Demonstrated expertise in data analysis and NLP applications, focusing on leveraging GMM and other advanced methods such as transformers(BERT).</li>
+                </ul>
             </div>
-
             <div data-date="Jan 2022 - Jun 2022">
                 <h3>Laagom, India</h3>
                 <h4>Software Development Engineer</h4>
                 <p>
-                    Design and build innovative, user-friendly websites on Bubble.io, conducted user tests for evaluating software stability, and provided technical solutions for CFAs. Collaborated with design teams to expedite project delivery by 60%, increasing client
-                    service efficiency from 50% to 75% using JavaScript, HTML, CSS. Proposed and enacted an architectural overhaul of Laagom’s client service application from Glide to Django, improving performance by 28%. Worked in an Agile environment,
-                    delivering high-quality software to meet customer needs.
+                    <ul>
+                        <li>Design and build innovative, user-friendly websites on Bubble.io, conducted user tests for evaluating software stability, and provided technical solutions for CFAs.</li>
+                        <li>Collaborated with design teams, project managers, product owners, and stakeholders to expedite project delivery by 60%. Client service efficiency increased from 50% to 75% using JavaScript, HTML, and CSS.</li>
+                        <li>Proposed and enacted an architectural overhaul of Laagom’s client service application from Glide to Django. Revamping on Django saw a surge in performance by 28%.</li>
+                    </ul>
                 </p>
             </div>
 
@@ -179,8 +208,13 @@
                 <h3>GND Rail Power Solutions, India</h3>
                 <h4>Software & Data Engineer</h4>
                 <p>
-                    Conducted automated and manual testing on communication software integrated with an Ethernet-based module (TCMS) to ensure optimal passenger safety. Co-led troubleshooting and testing of Passenger Information system, ensuring smoother operation. Led QA
-                    testing for CCTV Systems, reducing defects by 50% and enhancing passenger safety.
+                    <ul>
+                        <li>Conducted automated and manual testing on communication software integrated with an Ethernet-based module (TCMS) to ensure optimal passenger safety.</li>
+                        <li>Co-led troubleshooting and testing of Passenger Information system, ensuring smoother operation.</li>
+                        <li>Led QA testing for CCTV Systems, reducing defects by 50% and enhancing passenger safety.</li>
+                    </ul>
+
+
                 </p>
             </div>
 
@@ -188,7 +222,12 @@
                 <h3>Oceana Technology, India</h3>
                 <h4>Software Engineer, Intern</h4>
                 <p>
-                    Developed an application- Bidding Mart- to provide various customer-based services. Oceana Tech leveraged the application to sell products, optimizing application performance and resulting in a 55% increase in throughput.
+                    <ul>
+                        <li>Developed an application- Bidding Mart- to provide various customer-based services. </li>
+                        <li>Oceana Tech leveraged the application to sell products, optimizing application performance and resulting in a 55% increase in throughput.
+                        </li>
+                    </ul>
+
                 </p>
             </div>
         </div>
@@ -229,104 +268,90 @@
     <!-- End #education -->
 
     <div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-        <!-- Projects will go here -->
-        <div class="row">
-            <!-- Books Catalog Recommendation System -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <!-- Replace with your project image -->
-                    <img src="images/book.jpg" />
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <!-- Projects will go here -->
+            <div class="row">
+                <!-- Books Catalog Recommendation System -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <!-- Replace with your project image -->
+                        <img src="images/book.jpg" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Books Catalog Recommendation System</h3>
+                        <p><b>March 2023 - Data Mining | Recommendation system | Regression | Clustering | XGBoost</b>
+                            <br>Developed a personalized book recommendation engine, using collaborative filtering and SAS for advanced analytics, enhancing user engagement.
+                        </p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>Books Catalog Recommendation System</h3>
-                    <ul>
-                        <li><b>Date & Technologies:</b> March 2023 - Data Mining, Recommendation System, Regression, Clustering, XGBoost.</li>
-                        <li><b>Description:</b> Crafted an innovative book recommendation engine leveraging collaborative filtering, integrating SAS for cutting-edge analytics.</li>
-                        <li><b>Impact:</b> Significantly boosted user engagement by delivering personalized reading suggestions.</li>
-                    </ul>
+
+                <!-- Medicare Geographic Insights -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <!-- Replace with your project image -->
+                        <img src="images/medical.jpg" />
+                    </div>
+                    <div class="project-info">
+                        <h3 ">Medicare Geographic Insights</h3>
+                        <p><b>October 2023 - Spark | AWS S3 | Power BI</b>
+                            <br>Implemented a healthcare data integration solution using Apache Spark, AWS S3, with interactive Power BI dashboards for Medicare analysis.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Text Generation -->
+                <div class="project shadow-large ">
+                    <div class="project-image ">
+                        <!-- Replace with your project image -->
+                        <img src="images/text.jpg " />
+                    </div>
+                    <div class="project-info ">
+                        <h3>Text Generation</h3>
+                        <p><b>January 2020 - EDA | PCA | LLM | Generative AI</b>
+                            <br>Specialized in Generative AI and NLP for automated text generation, focusing on content coherence and ethical AI guidelines.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exploring State Buildings Sustainability -->
+                <div class="project shadow-large ">
+                    <div class="project-image ">
+                        <!-- Replace with your project image -->
+                        <img src="images/state.jpg " />
+                    </div>
+                    <div class="project-info ">
+                        <h3>Exploring State Buildings Sustainability</h3>
+                        <p><b>December 2022 - R, EDA, PCA</b>
+                            <br>Conducted analysis on sustainability metrics to predict ENERGY STAR Scores and identify factors impacting building performance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ferret Mining using Process Mining -->
+                <div class="project shadow-large ">
+                    <div class="project-image ">
+                        <!-- Replace with your project image -->
+                        <img src="images/process.jpg " />
+                    </div>
+                    <div class="project-info ">
+                        <h3>Ferret Mining using Process Mining</h3>
+                        <p><b>October 2022 - Business Intelligence | EDA | PCA | Hypothesis Testing | PMP4Y</b>
+                            <br>Developing solutions for process inefficiencies, utilizing advanced process mining to improve workflow management.
+                        </p>
+                    </div>
+                </div>
+                <!-- End .project-info -->
             </div>
-
-            <!-- Medicare Geographic Insights -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <!-- Replace with your project image -->
-                    <img src="images/medical.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Medicare Geographic Insights</h3>
-                    <ul>
-                        <li><b>Date & Technologies:</b> October 2023 - Implemented using Spark, AWS S3, and Power BI.</li>
-                        <li><b>Description:</b> Engineered a comprehensive healthcare data integration system.</li>
-                        <li><b>Features:</b> Enabled Medicare data analysis through interactive, insightful Power BI dashboards.</li>
-                        <li><b>Utility:</b> Facilitated deeper understanding and accessibility of healthcare insights.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Text Generation -->
-<div class="project shadow-large">
-    <div class="project-image">
-        <!-- Replace with your project image -->
-        <img src="images/text.jpg" alt="Text Generation Project" />
-    </div>
-    <div class="project-info">
-        <h3>Text Generation</h3>
-        <ul>
-            <li><b>Date & Technologies:</b> June 2023 - EDA, PCA, fine-tuning LLMs, Generative AI.</li>
-            <li><b>Specialization:</b> Specialized in leveraging advanced Generative AI and NLP for automated text generation. Fine-tuned large language models (LLMs) to enhance precision and relevance.</li>
-            <li><b>Quality Assurance:</b> Conducted thorough testing and validation to ensure quality, originality, and appropriateness of content, adhering to ethical AI guidelines.</li>
-            <li><b>Ethical Compliance:</b> Committed to maintaining high ethical standards in AI text creation.</li>
-        </ul>
-    </div>
-</div>
-
-
-            <!-- Exploring State Buildings Sustainability -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <!-- Replace with your project image -->
-                    <img src="images/state.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Exploring State Buildings Sustainability</h3>
-                    <ul>
-                        <li><b>Date & Technologies:</b> December 2022 - Relying on R, EDA, PCA.</li>
-                        <li><b>Objective:</b> Analyzed sustainability metrics for predicting ENERGY STAR Scores.</li>
-                        <li><b>Key Achievements:</b> Identified crucial factors affecting building performance.</li>
-                        <li><b>Contribution:</b> Offered insights into enhancing sustainability in state infrastructure.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Ferret Mining using Process Mining -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <!-- Replace with your project image -->
-                    <img src="images/process.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Ferret Mining using Process Mining</h3>
-                    <ul>
-                        <li><b>Date & Technologies:</b> October 2022 - Business Intelligence, EDA, PCA, Hypothesis Testing, PMP4Y.</li>
-                        <li><b>Project Focus:</b> Aimed at identifying and resolving process inefficiencies.</li>
-                        <li><b>Methodology:</b> Utilized advanced process mining techniques for workflow optimization.</li>
-                        <li><b>Impact:</b> Revolutionized workflow management through data-driven improvements.</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End .project-info -->
+            <!-- End .project -->
         </div>
-        <!-- End .project -->
     </div>
-</div>
-<!-- End #projects -->
+
+    <!-- End #projects -->
 
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
+    <div id="skills ">
+        <h2 class="heading ">Skills</h2>
         <ul>
             <li>JavaScript</li>
             <li>Python</li>
@@ -384,18 +409,18 @@
     </div>
     <!-- End #skills -->
 
-    <div id="contact">
+    <div id="contact ">
         <h2>Get in Touch</h2>
-        <div id="contact-form">
+        <div id="contact-form ">
 
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:" style="color: aliceblue; margin-left: 10px;">divyamsobti14@gmail.com</a>
+            <i class="fa fa-envelope " aria-hidden="true "></i>
+            <a href="mailto: " style="color: aliceblue; margin-left: 10px; ">divyamsobti14@gmail.com</a>
             <br>
-            <i class="fa fa-phone" aria-hidden="true" style="color: aliceblue; margin-top: 5px; margin-right: 10px;">  (650)476-9865</i>
+            <i class="fa fa-phone " aria-hidden="true " style="color: aliceblue; margin-top: 5px; margin-right: 10px; ">  (650)476-9865</i>
             <br>
-            <a href="https://github.com/DivyamSobti" target="_blank "><i class="fa fa-github fa-2x" aria-hidden="true" style="color: aliceblue; margin-top: 5px;"></i> 
+            <a href="https://github.com/DivyamSobti " target="_blank "><i class="fa fa-github fa-2x " aria-hidden="true " style="color: aliceblue; margin-top: 5px; "></i> 
             </a>
-            <a href="https://www.linkedin.com/in/divyam-s-03a612121/ " target="_blank " style="margin-top: 10px; margin-left: 10px;"><i class="fa fa-linkedin fa-2x" aria-hidden="true " style="color: aliceblue;"></i></a>
+            <a href="https://www.linkedin.com/in/divyam-s-03a612121/ " target="_blank " style="margin-top: 10px; margin-left: 10px; "><i class="fa fa-linkedin fa-2x " aria-hidden="true " style="color: aliceblue; "></i></a>
         </div>
         <!-- End #contact-form -->
     </div>
@@ -409,7 +434,7 @@
                         Copyright &copy; <span id="current-year ">2024</span> Divyam Sobti
                     </p>
                 </div>
-<!--                 <div class="col-sm-2 top ">
+                <!--                 <div class="col-sm-2 top ">
                     <span id="to-top ">
                         <i class="fa fa-chevron-up " aria-hidden="true "></i>
                     </span>
